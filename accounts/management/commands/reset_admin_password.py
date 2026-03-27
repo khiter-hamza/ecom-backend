@@ -28,6 +28,7 @@ class Command(BaseCommand):
 
         user.is_staff = True
         user.is_superuser = True
+        user.is_active = True
 
         # Optional project-level admin flag if present on custom user model.
         if hasattr(user, "is_admin"):
